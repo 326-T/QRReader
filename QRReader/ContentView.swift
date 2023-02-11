@@ -14,10 +14,6 @@ struct ContentView: View {
 
         VStack {
             VStack {
-                Picker(selection: )
-            }.padding()
-            
-            VStack {
                 Text("スキャンしたデバイス")
                 List(qrReaderModel.qrScannedItemList) { item in
                     Text(item.devicePk)
