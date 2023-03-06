@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var qrReaderModel = QrReaderModel()
+    @StateObject var qrReaderModel: QrReaderModel = QrReaderModel()
 
     var body: some View {
 
@@ -16,7 +16,7 @@ struct ContentView: View {
             VStack {
                 Text("スキャンしたデバイス")
                 List(qrReaderModel.qrScannedItemList) { item in
-                    Text(item.devicePk)
+                    Text(item.name)
                 }
             }.padding()
             
@@ -25,7 +25,7 @@ struct ContentView: View {
                     Text("QR読み込み")
                     Image(systemName: "camera")
                 }
-                .sheet(isPresented: $qrReaderModel.isShowing) {
+                .sheet(isPresented: $qrReaderModel.show) {
                     QrReaderView(qrReaderModel: qrReaderModel)
                 }.padding()
                 Button(action: qrReaderModel.clearItems) {
