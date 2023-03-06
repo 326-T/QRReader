@@ -7,23 +7,18 @@
 
 import Foundation
 
-struct QrScannedItem: Identifiable {
-    let id = UUID()
-    let name: String
-}
-
 class QrReaderModel: ObservableObject {
     
-    @Published var qrScannedItemList: [QrScannedItem] = []
+    @Published var qrScannedItemList: [ListItem] = []
     @Published var show: Bool = false
     
     public func appendNotExists(item: String) {
         if !qrScannedItemList.contains(where: { $0.name == item }) {
-            qrScannedItemList.append(QrScannedItem(name: item))
+            qrScannedItemList.append(ListItem(name: item))
         }
     }
     
-    public func clearItems() {
+    public func removeAll() {
         qrScannedItemList.removeAll()
     }
     

@@ -17,5 +17,8 @@ struct QrReaderView: View {
                 .onFound(lambda: qrReaderModel.appendNotExists)
                 .edgesIgnoringSafeArea(.all)
         }
+        .onDisappear {
+            qrReaderModel.turnOff()
+        }
     }
 }

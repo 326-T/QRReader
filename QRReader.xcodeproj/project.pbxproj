@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2E215B9829B4D3BA001BEA1E /* QrReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215B9729B4D3BA001BEA1E /* QrReaderView.swift */; };
 		2E215B9A29B4E9A0001BEA1E /* QrReaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215B9929B4E9A0001BEA1E /* QrReaderDelegate.swift */; };
+		2E215B9C29B57F25001BEA1E /* D42RackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215B9B29B57F25001BEA1E /* D42RackModel.swift */; };
+		2E215B9E29B58C7E001BEA1E /* D42DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215B9D29B58C7E001BEA1E /* D42DeviceModel.swift */; };
+		2E215BA029B5A4C9001BEA1E /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215B9F29B5A4C9001BEA1E /* ListItem.swift */; };
+		2E215BA329B5B8BA001BEA1E /* BoolUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E215BA229B5B8BA001BEA1E /* BoolUtils.swift */; };
 		2E28611E2962AE9F006B1C26 /* QRReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28611D2962AE9F006B1C26 /* QRReaderApp.swift */; };
 		2E2861202962AE9F006B1C26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28611F2962AE9F006B1C26 /* ContentView.swift */; };
 		2E2861222962AEA0006B1C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2861212962AEA0006B1C26 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* Begin PBXFileReference section */
 		2E215B9729B4D3BA001BEA1E /* QrReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderView.swift; sourceTree = "<group>"; };
 		2E215B9929B4E9A0001BEA1E /* QrReaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderDelegate.swift; sourceTree = "<group>"; };
+		2E215B9B29B57F25001BEA1E /* D42RackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D42RackModel.swift; sourceTree = "<group>"; };
+		2E215B9D29B58C7E001BEA1E /* D42DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D42DeviceModel.swift; sourceTree = "<group>"; };
+		2E215B9F29B5A4C9001BEA1E /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		2E215BA229B5B8BA001BEA1E /* BoolUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolUtils.swift; sourceTree = "<group>"; };
 		2E28611A2962AE9F006B1C26 /* QRReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E28611D2962AE9F006B1C26 /* QRReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderApp.swift; sourceTree = "<group>"; };
 		2E28611F2962AE9F006B1C26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +94,9 @@
 			children = (
 				2E28618F29646870006B1C26 /* QrReaderModel.swift */,
 				2E2861932964A8DF006B1C26 /* SelectionModel.swift */,
+				2E215B9B29B57F25001BEA1E /* D42RackModel.swift */,
+				2E215B9D29B58C7E001BEA1E /* D42DeviceModel.swift */,
+				2E215B9F29B5A4C9001BEA1E /* ListItem.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -97,6 +108,14 @@
 				2E215B9729B4D3BA001BEA1E /* QrReaderView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		2E215BA129B5B8AB001BEA1E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E215BA229B5B8BA001BEA1E /* BoolUtils.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		2E2861112962AE9F006B1C26 = {
@@ -122,6 +141,7 @@
 		2E28611C2962AE9F006B1C26 /* QRReader */ = {
 			isa = PBXGroup;
 			children = (
+				2E215BA129B5B8AB001BEA1E /* utils */,
 				2E215B9629B49E4C001BEA1E /* views */,
 				2E215B9529B49E34001BEA1E /* models */,
 				2E28611D2962AE9F006B1C26 /* QRReaderApp.swift */,
@@ -288,9 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E215BA029B5A4C9001BEA1E /* ListItem.swift in Sources */,
+				2E215BA329B5B8BA001BEA1E /* BoolUtils.swift in Sources */,
 				2E215B9829B4D3BA001BEA1E /* QrReaderView.swift in Sources */,
+				2E215B9C29B57F25001BEA1E /* D42RackModel.swift in Sources */,
 				2E2861882963CEF5006B1C26 /* QrReaderRepresentable.swift in Sources */,
 				2E2861202962AE9F006B1C26 /* ContentView.swift in Sources */,
+				2E215B9E29B58C7E001BEA1E /* D42DeviceModel.swift in Sources */,
 				2E215B9A29B4E9A0001BEA1E /* QrReaderDelegate.swift in Sources */,
 				2E2861942964A8DF006B1C26 /* SelectionModel.swift in Sources */,
 				2E28611E2962AE9F006B1C26 /* QRReaderApp.swift in Sources */,
@@ -456,6 +480,7 @@
 				DEVELOPMENT_TEAM = U6YK24M25J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR読み込みのためにカメラを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -486,6 +511,7 @@
 				DEVELOPMENT_TEAM = U6YK24M25J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR読み込みのためにカメラを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
