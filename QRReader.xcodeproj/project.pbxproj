@@ -22,7 +22,6 @@
 		2E28613B2962AEA1006B1C26 /* QRReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28613A2962AEA1006B1C26 /* QRReaderUITestsLaunchTests.swift */; };
 		2E2861882963CEF5006B1C26 /* QrReaderRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2861872963CEF5006B1C26 /* QrReaderRepresentable.swift */; };
 		2E28619029646870006B1C26 /* QrReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28618F29646870006B1C26 /* QrReaderModel.swift */; };
-		2E2861942964A8DF006B1C26 /* SelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2861932964A8DF006B1C26 /* SelectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		2E28613A2962AEA1006B1C26 /* QRReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2E2861872963CEF5006B1C26 /* QrReaderRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderRepresentable.swift; sourceTree = "<group>"; };
 		2E28618F29646870006B1C26 /* QrReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderModel.swift; sourceTree = "<group>"; };
-		2E2861932964A8DF006B1C26 /* SelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				2E28618F29646870006B1C26 /* QrReaderModel.swift */,
-				2E2861932964A8DF006B1C26 /* SelectionModel.swift */,
 				2E215B9B29B57F25001BEA1E /* D42RackModel.swift */,
 				2E215B9D29B58C7E001BEA1E /* D42DeviceModel.swift */,
 				2E215B9F29B5A4C9001BEA1E /* ListItem.swift */,
@@ -316,7 +313,6 @@
 				2E2861202962AE9F006B1C26 /* ContentView.swift in Sources */,
 				2E215B9E29B58C7E001BEA1E /* D42DeviceModel.swift in Sources */,
 				2E215B9A29B4E9A0001BEA1E /* QrReaderDelegate.swift in Sources */,
-				2E2861942964A8DF006B1C26 /* SelectionModel.swift in Sources */,
 				2E28611E2962AE9F006B1C26 /* QRReaderApp.swift in Sources */,
 				2E28619029646870006B1C26 /* QrReaderModel.swift in Sources */,
 			);
