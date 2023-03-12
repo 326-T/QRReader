@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QrReaderView: View {
-    @ObservedObject var qrReaderModel: QrReaderModel
+    var qrReaderModel: QrReaderModel
     
     var body: some View {
 
